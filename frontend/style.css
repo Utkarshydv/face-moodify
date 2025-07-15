@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 380px;
+  text-align: center;
+  padding: 20px;
+}
+
+.cam-section {
+  margin-bottom: 30px;
+}
+
+.cam-box {
+  background: #111;
+  border: 3px solid #003366;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #002244;
+  padding: 15px;
+}
+
+.cam-title {
+  margin: 0 0 8px;
+  color: #88b0ff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+video {
+  width: 100%;
+  border-radius: 6px;
+}
+
+button#detectBtn {
+  margin: 15px 0 10px;
+  padding: 10px 20px;
+  background: #003366;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button#detectBtn:hover {
+  background: #0055aa;
+}
+
+#emotionText {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.song-section {
+  background: #111;
+  border: 3px solid #003366;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #002244;
+  padding: 15px;
+}
+
+.songs-container-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.song-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100px;
+  box-shadow: 0 0 8px #001122;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.song-card:hover {
+  transform: scale(1.03);
+}
+
+.song-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.song-info {
+  padding: 6px;
+  text-align: center;
+}
+
+.song-title {
+  font-size: 12px;
+  color: #88b0ff;
+  margin: 2px 0;
+}
+
+.artist-name {
+  font-size: 11px;
+  color: #ccc;
+}
